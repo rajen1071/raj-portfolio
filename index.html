@@ -17,9 +17,9 @@
 
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-  <div class="container">
+  <div class="container-fluid px-0">
     <a class="navbar-brand" href="#home">
-      <span class="logo-badge">RN</span>
+      <span class="logo-badge"><img src="./assets/profile/rn-logo.png" alt="Raj Narayan"></span>
       <span class="logo-text">Raj Narayan</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -27,16 +27,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto nav-links">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#automation">Automation</a></li>
-        <li class="nav-item"><a class="nav-link" href="#dashboards">Dashboards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#email-analytics">Email Analytics</a></li>
         <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <a href="#" class="btn btn-purple d-none d-lg-inline-flex">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
+      <a href="./assets/resume/Raj-QA.pdf" download class="btn btn-purple d-none d-lg-inline-flex">Download Resume</a>
     </div>
   </div>
 </nav>
@@ -52,21 +51,20 @@
         <p class="hero-stack">Mautic | Java | Selenium | SQL | API Testing</p>
         <p class="hero-desc">I build, test and automate robust systems, drive quality and create insightful dashboards that deliver results.</p>
         <div class="hero-btns">
-          <a href="#projects" class="btn btn-purple">View My Projects <i class="fa-solid fa-arrow-right ms-2"></i></a>
-          <a href="#" class="btn btn-outline-light-custom">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
+          <a href="https://github.com/rajen1071/" target="_blank" class="btn btn-purple">View My Github <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          <a href="./assets/resume/Raj-QA.pdf" download class="btn btn-purple">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
         </div>
         <div class="hero-socials">
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="https://www.linkedin.com/in/raj-narayan-50a0bb135/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/rajen1071/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:rajnarayanen1071@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+918826668722"><i class="fa-solid fa-phone"></i></a>
         </div>
       </div>
       <div class="col-lg-6 text-center" data-aos="fade-left">
-        <div class="hero-avatar-wrap">
-          <div class="glow-ring"></div>
-          <div class="hero-avatar">
-            <img src="./assets/profile.png" alt="Raj Narayan">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-card">
+            <img src="./assets/profile/profile.png" alt="Raj Narayan">
           </div>
           <div class="float-badge badge-code"><i class="fa-solid fa-code"></i></div>
           <div class="float-badge badge-check"><i class="fa-solid fa-check"></i></div>
@@ -104,7 +102,7 @@
       <div class="col-lg-5">
         <p class="about-text">I am a QA Engineer with 4.2+ years of strong expertise in Manual Testing, Test Automation, Mautic Email Automation, SQL, API Testing and Dashboard Development.</p>
         <p class="about-text">I enjoy solving problems, improving processes and building automation workflows that create real business impact.</p>
-        <a href="#contact" class="btn btn-outline-light-custom">More About Me <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#aboutModal">More About Me <i class="fa-solid fa-arrow-right ms-2"></i></a>
       </div>
       <div class="col-lg-7">
         <div class="timeline-wrap">
@@ -134,6 +132,208 @@
   </div>
 </section>
 
+<!-- ===== ABOUT ME MODAL ===== -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content cert-modal-content">
+      <div class="modal-header">
+        <div>
+          <h5 class="modal-title">About Me</h5>
+          <p class="modal-sub">My journey - the full story</p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body about-modal-body">
+        <div class="about-intro-header">
+          <div class="about-intro-text">
+            <h3 class="about-intro-heading">Hey! I'm <span>Raj Narayan</span> and I'm a <span>QA Analyst &amp; Automation Tester</span>.</h3>
+            <p>With a background that started in the BPO/KPO industry, I bring a problem-solving mindset and strong analytical skills to software testing. My early years in process and client-support roles taught me how to handle complex workflows under pressure - skills that translate seamlessly into QA.</p>
+            <p>Now a QA Analyst with 4+ years of expertise in Manual Testing, Selenium Automation, Java, SQL and API Testing, I specialize in building reliable test automation and insightful dashboards. I'm passionate about improving software quality and collaborating with teams that value precision.</p>
+          </div>
+          <div class="about-intro-side">
+            <div class="about-intro-photo">
+              <img src="./assets/profile/profile.png" alt="Raj Narayan">
+            </div>
+            <div class="about-intro-socials">
+              <a href="https://www.linkedin.com/in/raj-narayan-50a0bb135/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/rajen1071/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:rajnarayanen1071@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <a href="tel:+918826668722"><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="about-intro">Here's a timeline of what I've been up to.</p>
+
+        <div class="about-timeline">
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2026 - Today</h6>
+            <ul class="about-check-list">
+              <li>Promoted to Quality Assurance Analyst at ANR Software.</li>
+              <li>Enjoy building reliable test automation and improving software quality.</li>
+              <li>Continuously learning new technologies and solving real-world testing challenges.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2024</h6>
+            <ul class="about-check-list">
+              <li>Promoted to Quality Assurance Engineer at ANR Software.</li>
+              <li>Worked extensively on Email Automation and Dashboard Development.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2023</h6>
+            <ul class="about-check-list">
+              <li>Promoted to Associate Quality Assurance Engineer at ANR Software.</li>
+              <li>Continued expanding skills in Selenium Automation, Java, SQL and API Testing.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2022</h6>
+            <ul class="about-check-list">
+              <li>Got first opportunity in IT - joined ANR Software Pvt. Ltd. as a Quality Assurance Trainee.</li>
+              <li>Completed the Selenium with Java course from Rahul Shetty Academy on Udemy.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2021</h6>
+            <ul class="about-check-list">
+              <li>Realized true passion was in software testing during the COVID period.</li>
+              <li>Joined QSpiders, Noida, and completed Manual Software Testing training.</li>
+              <li>Built a strong foundation in QA concepts and practices.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2020</h6>
+            <ul class="about-check-list">
+              <li>Affected by COVID-19 layoffs, along with many others in the industry.</li>
+              <li>Rejoined the company once the situation improved, based on performance and dedication.</li>
+              <li>Honored with the Best Employee of the Month award at Provana/iEnergizer.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2019</h6>
+            <ul class="about-check-list">
+              <li>Joined Provana India Pvt. Ltd. in the KPO industry.</li>
+              <li>Developed strong communication and analytical skills in a professional environment.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2018</h6>
+            <ul class="about-check-list">
+              <li>After ~3 years of exam preparation, decided to move forward and become financially independent.</li>
+              <li>Started professional journey with iEnergizer in the BPO industry (Paytm process).</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>2015</h6>
+            <ul class="about-check-list">
+              <li>Completed B.Tech in Electrical &amp; Electronics Engineering from United College of Engineering &amp; Research, Allahabad, with 65%.</li>
+              <li>Moved to Delhi to prepare for government competitive exams.</li>
+            </ul>
+          </div>
+
+          <div class="about-year-block">
+            <span class="about-year-dot"></span>
+            <h6>Gopalganj, Bihar</h6>
+            <ul class="about-check-list">
+              <li>Completed early education in Gopalganj, Bihar.</li>
+              <li>Passed secondary education with First Division, scoring 66%.</li>
+              <li>Passed higher secondary education with First Division, scoring 65%.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== WORK EXPERIENCE ===== -->
+<section id="experience" class="section-block alt-bg">
+  <div class="container">
+    <p class="section-label">Work Experience</p>
+
+    <div class="exp-tabs-wrap">
+      <div class="exp-tabs-list">
+        <button type="button" class="exp-tab-btn active" data-target="exp-panel-anr">
+          <span class="exp-tab-logo"><img src="assets/logos/anr.png" alt="ANR Software"></span>
+          ANR Software
+        </button>
+        <button type="button" class="exp-tab-btn" data-target="exp-panel-provana">
+          <span class="exp-tab-logo"><img src="assets/logos/provana.png" alt="Provana India"></span>
+          Provana India
+        </button>
+        <button type="button" class="exp-tab-btn" data-target="exp-panel-ienergizer">
+          <span class="exp-tab-logo"><img src="assets/logos/ienergizer.png" alt="iEnergizer"></span>
+          iEnergizer
+        </button>
+      </div>
+
+      <div class="exp-tabs-panels">
+        <div class="exp-panel active" id="exp-panel-anr">
+          <h4>Quality Assurance Analyst <span class="exp-panel-at">@ ANR Software Pvt. Ltd.</span></h4>
+          <p class="exp-panel-meta">Apr 2026 – Present</p>
+          <p class="exp-panel-location">Noida, Uttar Pradesh</p>
+          <ul class="exp-check-list">
+            <li>Designed and executed 500+ test cases across Functional, Smoke, Sanity, Integration and Regression scenarios.</li>
+            <li>Performed cross-browser testing on Chrome, Firefox and Edge; logged 100+ defects with a 95% closure rate using JIRA.</li>
+            <li>Automated regression suites using Selenium WebDriver (Java), TestNG and POM, cutting manual effort by 30%.</li>
+            <li>Performed API testing using Postman, validating REST APIs, request/response payloads and status codes.</li>
+            <li>Tested Mautic marketing automation workflows and vTiger CRM modules end-to-end.</li>
+            <li>Executed SQL queries for back-end data validation using MySQL/PostgreSQL.</li>
+            <li>Collaborated in Agile/Scrum sprints and supported CI/CD pipeline validation for release readiness.</li>
+          </ul>
+          <div class="exp-progression">
+            <div class="exp-prog-item"><span>Quality Assurance Engineer</span><span>Jun 2024 – Apr 2026</span></div>
+            <div class="exp-prog-item"><span>Associate Quality Assurance Engineer</span><span>Jun 2023 – Jun 2024</span></div>
+            <div class="exp-prog-item"><span>Quality Assurance Trainee</span><span>May 2022 – Jun 2023</span></div>
+          </div>
+        </div>
+
+        <div class="exp-panel" id="exp-panel-provana">
+          <h4>Process Expert <span class="exp-panel-at">@ Provana India</span></h4>
+          <p class="exp-panel-meta">Aug 2020 – May 2022</p>
+          <ul class="exp-check-list">
+            <li>Handled escalations for a US-based client, ensuring high-quality service delivery.</li>
+            <li>Mentored team members on process guidelines and maintained consistent SLA adherence for the client account.</li>
+            <li>Recognized with the Best Employee of the Month award for performance and dedication.</li>
+          </ul>
+          <div class="exp-progression">
+            <div class="exp-prog-item"><span>Process Analyst</span><span>Jun 2019 – Apr 2020</span></div>
+          </div>
+        </div>
+
+        <div class="exp-panel" id="exp-panel-ienergizer">
+          <h4>Process Analyst <span class="exp-panel-at">@ iEnergizer</span></h4>
+          <p class="exp-panel-meta">Mar 2018 – Oct 2018</p>
+          <p class="exp-panel-location">Noida</p>
+          <ul class="exp-check-list">
+            <li>Resolved customer tickets for the Paytm process via email as part of backend support.</li>
+            <li>Ensured timely resolution of customer queries within defined SLAs, maintaining process quality standards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== SKILLS ===== -->
 <section id="skills" class="section-block alt-bg">
   <div class="container">
@@ -141,7 +341,7 @@
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-purple">
-          <div class="skill-icon icon-purple"><i class="fa-solid fa-dollar-sign"></i></div>
+          <div class="skill-icon"><img src="assets/skills/qa.png" alt="QA & Testing"></div>
           <h5>QA &amp; Testing</h5>
           <ul>
             <li>Manual Testing</li><li>Functional Testing</li><li>Regression Testing</li><li>API Testing</li><li>Database Testing</li><li>Cross-Browser Testing</li>
@@ -150,7 +350,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-blue">
-          <div class="skill-icon icon-blue"><i class="fa-solid fa-robot"></i></div>
+          <div class="skill-icon"><img src="assets/skills/automation.png" alt="Automation"></div>
           <h5>Automation</h5>
           <ul>
             <li>Java</li><li>Selenium WebDriver</li><li>TestNG</li><li>Page Object Model</li><li>BDD</li>
@@ -159,7 +359,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-green">
-          <div class="skill-icon icon-green"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-icon"><img src="assets/skills/database.png" alt="Database"></div>
           <h5>Database</h5>
           <ul>
             <li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Joins &amp; Sub Queries</li><li>Stored Procedures</li>
@@ -168,7 +368,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-yellow">
-          <div class="skill-icon icon-yellow"><i class="fa-solid fa-toolbox"></i></div>
+          <div class="skill-icon"><img src="assets/skills/tools-technology.png" alt="Tools & Technologies"></div>
           <h5>Tools &amp; Technologies</h5>
           <ul>
             <li>JIRA</li><li>Postman</li><li>Git &amp; CI/CD</li><li>HTML, CSS, Bootstrap</li><li>MS Office</li>
@@ -177,7 +377,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-pink">
-          <div class="skill-icon icon-pink"><i class="fa-solid fa-paper-plane"></i></div>
+          <div class="skill-icon"><img src="assets/skills/marketing-automation.png" alt="Marketing Automation"></div>
           <h5>Marketing Automation</h5>
           <ul>
             <li>Mautic</li><li>Campaign Automation</li><li>Segmentation &amp; Tags</li><li>Email Deliverability</li>
@@ -186,7 +386,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="skill-card border-cyan">
-          <div class="skill-icon icon-cyan"><i class="fa-solid fa-brain"></i></div>
+          <div class="skill-icon"><img src="assets/skills/ai-tools.png" alt="AI Tools"></div>
           <h5>AI Tools</h5>
           <ul>
             <li>Claude</li><li>Gemini</li><li>OpenAI</li><li>NotebookLM</li><li>AI Studio</li>
@@ -202,39 +402,72 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <p class="section-label mb-0">Featured Projects</p>
-      <a href="#" class="link-view-all">View All Projects <i class="fa-solid fa-arrow-right ms-1"></i></a>
     </div>
     <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="project-card">
-          <div class="project-thumb thumb-mautic"><i class="fa-solid fa-envelope-open-text"></i></div>
-          <h5>Mautic Campaign Automation</h5>
-          <p>Tested end-to-end marketing automation workflows including campaign triggers, segmentation and Mautic-to-CRM data sync.</p>
-          <span class="tag-line">Mautic, MySQL, Email Marketing</span>
+          <div class="project-thumb"><img src="assets/projects/mautic.png" alt="Mautic - Marketing Automation Platform"></div>
+          <h5>Mautic - Marketing Automation Platform</h5>
+          <ul class="project-list">
+            <li>Performed end-to-end testing of marketing automation workflows including campaign triggers, email segmentation, and CRM data synchronization.</li>
+            <li>Validated custom workflows, user roles, and security configurations; identified critical data sync issues before production release.</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="project-card">
-          <div class="project-thumb thumb-dashboard"><i class="fa-solid fa-chart-pie"></i></div>
-          <h5>Email Analytics Dashboard</h5>
-          <p>Interactive dashboard to analyze email campaign performance and contact engagement.</p>
-          <span class="tag-line">HTML, CSS, JS, Chart.js, API</span>
+          <div class="project-thumb"><img src="assets/projects/vTiger.png" alt="vTiger - CRM Platform"></div>
+          <h5>vTiger - CRM Platform</h5>
+          <ul class="project-list">
+            <li>Tested CRM modules including Leads, Contacts, Sales Pipeline, and RBAC, ensuring data accuracy and workflow efficiency.</li>
+            <li>Executed regression testing across 20+ modules to ensure system stability and data integrity post-release.</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="project-card">
-          <div class="project-thumb thumb-vtiger"><i class="fa-solid fa-users-gear"></i></div>
-          <h5>vTiger CRM &amp; Sales App Testing</h5>
-          <p>Tested Leads, Contacts, Sales Pipeline and RBAC modules; validated CRM-SalesApp data sync and Twilio calls.</p>
-          <span class="tag-line">vTiger, SalesApp, Twilio</span>
+          <div class="project-thumb"><img src="assets/projects/appointments.png" alt="Appointments - Online Booking Platform"></div>
+          <h5>Appointments - Online Booking Platform</h5>
+          <p class="project-url">appointments.altametrics.com</p>
+          <ul class="project-list">
+            <li>Performed functional and UI testing for scheduling, rescheduling, reminders, and time-zone validations across multiple user roles.</li>
+          </ul>
+          <ul class="project-list">
+            <li>Performed functional and UI testing for scheduling, rescheduling, reminders, and time-zone validations across multiple user roles.</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="project-card">
-          <div class="project-thumb thumb-web"><i class="fa-solid fa-window-restore"></i></div>
-          <h5>Buying Intent Data Integration</h5>
-          <p>Tested third-party intent data import, company filtering, Mautic sync and lead push to vTiger CRM.</p>
-          <span class="tag-line">Data Integration, Mautic, vTiger</span>
+          <div class="project-thumb"><img src="assets/projects/buying-intent.png" alt="Buying Intent - Data Integration Application"></div>
+          <h5>Buying Intent - Data Integration Application</h5>
+          <ul class="project-list">
+            <li>Tested end-to-end data integration workflows including third-party intent data import, company filtering, Mautic synchronization, and lead push to vTiger CRM.</li>
+          </ul>
+          <ul class="project-list">
+            <li>Tested end-to-end data integration workflows including third-party intent data import, company filtering, Mautic synchronization, and lead push to vTiger CRM.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-thumb"><img src="assets/projects/writer-portal.png" alt="Writer Portal - Article Publishing Platform"></div>
+          <h5>Writer Portal - Article Publishing Platform</h5>
+          <p class="project-url">wp.altametrics.com</p>
+          <ul class="project-list">
+            <li>Performed functional and content-workflow testing for article creation, editing, and publishing modules in WriterPortal, ensuring accurate rendering and seamless publishing.</li>
+            <li>Validated user roles, permissions, and content approval workflows to ensure data integrity across the publishing pipeline.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-thumb"><img src="assets/projects/sales-app.png" alt="Sales App - Sales Management Application"></div>
+          <h5>Sales App - Sales Management Application</h5>
+          <ul class="project-list">
+            <li>Performed functional and regression testing of sales workflows including lead assignment, deal tracking, and pipeline updates.</li>
+            <li>Validated data synchronization between the Sales App and CRM, ensuring accuracy of customer and sales records.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -246,7 +479,6 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <p class="section-label mb-0">Automation Projects</p>
-      <a href="#" class="link-view-all">View All Scripts <i class="fa-solid fa-arrow-right ms-1"></i></a>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4 col-xl">
@@ -288,47 +520,108 @@
   </div>
 </section>
 
-<!-- ===== DASHBOARDS ===== -->
-<section id="dashboards" class="section-block">
+<!-- ===== EMAIL ANALYTICS DASHBOARD ===== -->
+<section id="email-analytics" class="section-block">
   <div class="container">
-    <p class="section-label">Dashboards</p>
+    <p class="section-label">Email Analytics Dashboard</p>
 
-    <div class="row align-items-center g-5 mb-5">
+    <div class="row align-items-center g-5">
       <div class="col-lg-7">
         <div class="laptop-mock">
-          <img src="assets/dashboard-signup.png" alt="Email Analytics Dashboard - Sign Up Overview">
+          <div id="dashCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/dashboard/g1-dashboard.png" alt="All Mautic Dashboard Overview">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/g1-campaign.png" alt="Mautic Campaign Overview">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/g1-summary.png" alt="Mautic Summary Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/g1-comparision.png" alt="Mautic Comparison Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/g1-nurture.png" alt="Mautic Nurture Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/ra-dashboard.png" alt="RA Email Dashboard Overview">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/ra-signup.png" alt="RA Sign Up Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/ra-newsletter.png" alt="RA Newsletter Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/ra-registration.png" alt="RA Registration Form Dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dashboard/ra-nurture.png" alt="RA Email Nurture Dashboard">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#dashCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#dashCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="6"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="7"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="8"></button>
+              <button type="button" data-bs-target="#dashCarousel" data-bs-slide-to="9"></button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-5">
         <h4>Email Analytics Dashboard</h4>
-        <p class="about-text">Real-time insights into email performance, campaign analytics, contact engagement and deliverability, built for the Restaurant Association Mautic instance.</p>
+        <p class="about-text">Real-time insights into email performance, campaign analytics, contact engagement and deliverability, built for the Restaurant Association Mautic instance - sign-ups, newsletters, registration forms and full campaign overview in one place.</p>
         <ul class="check-list">
           <li><i class="fa-solid fa-check"></i> Open Rate, Click Rate, Bounce Rate</li>
           <li><i class="fa-solid fa-check"></i> Campaign Performance Report</li>
           <li><i class="fa-solid fa-check"></i> Contact Engagement Analysis</li>
-          <li><i class="fa-solid fa-check"></i> Device &amp; Location Analytics</li>
+          <li><i class="fa-solid fa-check"></i> Newsletter &amp; Registration Form Tracking</li>
           <li><i class="fa-solid fa-check"></i> Filter by Date, Campaign, Segment</li>
         </ul>
-        <a href="#" class="btn btn-purple">Live Demo <i class="fa-solid fa-up-right-from-square ms-2"></i></a>
-      </div>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="dash-shot">
-          <img src="assets/dashboard-newsletter.png" alt="Newsletter and Registration Form Dashboard">
-          <p>Newsletter Campaigns &amp; Registration Form tracking with Mautic tag assignment.</p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="dash-shot">
-          <img src="assets/dashboard-campaign.png" alt="Mautic Campaign Overview Dashboard">
-          <p>Mautic Campaign Overview — JTBD performance across Music, Payroll, Plum POS, Accounting and more.</p>
-        </div>
+        <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#dashboardModal">Live Demo <i class="fa-solid fa-up-right-from-square ms-2"></i></a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ===== DASHBOARD LINK MODAL ===== -->
+<div class="modal fade" id="dashboardModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content cert-modal-content">
+      <div class="modal-header">
+        <div>
+          <h5 class="modal-title">Choose a Dashboard</h5>
+          <p class="modal-sub">Pick which live dashboard you'd like to open</p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a href="https://rajen1071.github.io/g1_all_mautic_api_dashboard/" target="_blank" rel="noopener" class="dashboard-link-btn">
+          <span><i class="fa-solid fa-chart-line me-2"></i>All Mautic Email Dashboard</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://rajen1071.github.io/ra-email-dashboard/" target="_blank" rel="noopener" class="dashboard-link-btn">
+          <span><i class="fa-solid fa-envelope-open-text me-2"></i>RA Email Dashboard</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ===== CODE & PROBLEM SOLVING ===== -->
 <section class="section-block alt-bg">
@@ -337,7 +630,7 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="code-card">
-          <div class="code-icon icon-green"><i class="fa-brands fa-java"></i></div>
+          <div class="code-icon"><img src="assets/logos/java.png" alt="Java"></div>
           <h5>Java Programs</h5>
           <p>Core Java, OOPs, Collections, Exception Handling, File Handling, Multithreading and more.</p>
           <a href="#" class="link-green">View Code <i class="fa-solid fa-arrow-right ms-1"></i></a>
@@ -345,7 +638,7 @@
       </div>
       <div class="col-md-4">
         <div class="code-card">
-          <div class="code-icon icon-blue"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="code-icon"><img src="assets/logos/sql.png" alt="SQL"></div>
           <h5>SQL Queries</h5>
           <p>Complex Queries, Joins, Sub Queries, Window Functions, Stored Procedures and more.</p>
           <a href="#" class="link-blue">View Queries <i class="fa-solid fa-arrow-right ms-1"></i></a>
@@ -353,7 +646,7 @@
       </div>
       <div class="col-md-4">
         <div class="code-card">
-          <div class="code-icon icon-purple"><i class="fa-solid fa-code"></i></div>
+          <div class="code-icon"><img src="assets/logos/selenium.png" alt="Selenium"></div>
           <h5>Automation Scripts</h5>
           <p>Selenium Web Automation scripts with TestNG framework and POM design pattern.</p>
           <a href="#" class="link-purple">View Scripts <i class="fa-solid fa-arrow-right ms-1"></i></a>
@@ -369,36 +662,101 @@
     <p class="section-label">Certifications &amp; Achievements</p>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3">
-        <div class="cert-card">
-          <div class="cert-icon icon-purple"><i class="fa-solid fa-certificate"></i></div>
-          <h5>Selenium WebDriver with Java</h5>
-          <p>Udemy — Rahul Shetty Academy</p>
-        </div>
+        <a class="cert-card" href="#" data-bs-toggle="modal" data-bs-target="#certModal"
+           data-img="assets/certificates/udemy.png"
+           data-title="Selenium WebDriver with Java"
+           data-sub="Udemy - Rahul Shetty Academy">
+          <div class="cert-thumb">
+            <img src="assets/certificates/udemy.png" alt="Selenium WebDriver with Java Certificate">
+            <span class="cert-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+          </div>
+          <div class="cert-body">
+            <h5>Selenium WebDriver with Java</h5>
+            <p>Udemy - Rahul Shetty Academy</p>
+          </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="cert-card">
-          <div class="cert-icon icon-blue"><i class="fa-solid fa-certificate"></i></div>
-          <h5>Manual Testing Certification</h5>
-          <p>QSpiders Institute, Noida</p>
-        </div>
+        <a class="cert-card" href="#" data-bs-toggle="modal" data-bs-target="#certModal"
+           data-img="assets/certificates/qspider.png"
+           data-title="Manual Testing Certification"
+           data-sub="QSpiders Institute, Noida">
+          <div class="cert-thumb">
+            <img src="assets/certificates/qspider.png" alt="Manual Testing Certificate">
+            <span class="cert-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+          </div>
+          <div class="cert-body">
+            <h5>Manual Testing Certification</h5>
+            <p>QSpiders Institute, Noida</p>
+          </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="cert-card">
-          <div class="cert-icon icon-yellow"><i class="fa-solid fa-award"></i></div>
-          <h5>Employee of the Month</h5>
-          <p>Recognized for QA contributions &amp; defect detection</p>
-        </div>
+        <a class="cert-card" href="#" data-bs-toggle="modal" data-bs-target="#certModal"
+           data-img="assets/certificates/ienergizer.png"
+           data-title="Employee of the Month"
+           data-sub="Recognized for QA contributions &amp; defect detection">
+          <div class="cert-thumb">
+            <img src="assets/certificates/ienergizer.png" alt="Employee of the Month Certificate">
+            <span class="cert-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+          </div>
+          <div class="cert-body">
+            <h5>Employee of the Month</h5>
+            <p>Recognized for QA contributions &amp; defect detection</p>
+          </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="cert-card">
-          <div class="cert-icon icon-pink"><i class="fa-solid fa-award"></i></div>
-          <h5>Team Excellence Award</h5>
-          <p>Acknowledged for collaboration &amp; testing standards</p>
-        </div>
+        <a class="cert-card" href="#" data-bs-toggle="modal" data-bs-target="#certModal"
+           data-img="assets/certificates/provana-april.png"
+           data-title="Team Excellence Award"
+           data-sub="Acknowledged for collaboration &amp; testing standards">
+          <div class="cert-thumb">
+            <img src="assets/certificates/provana-april.png" alt="Team Excellence Award Certificate">
+            <span class="cert-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+          </div>
+          <div class="cert-body">
+            <h5>Team Excellence Award</h5>
+            <p>Acknowledged for collaboration &amp; testing standards</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <a class="cert-card" href="#" data-bs-toggle="modal" data-bs-target="#certModal"
+           data-img="assets/certificates/provana-october.png"
+           data-title="Team Excellence Award"
+           data-sub="Acknowledged for collaboration &amp; testing standards">
+          <div class="cert-thumb">
+            <img src="assets/certificates/provana-october.png" alt="Team Excellence Award Certificate">
+            <span class="cert-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+          </div>
+          <div class="cert-body">
+            <h5>Team Excellence Award</h5>
+            <p>Acknowledged for collaboration &amp; testing standards</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ===== CERTIFICATE MODAL (shared) ===== -->
+<div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content cert-modal-content">
+      <div class="modal-header">
+        <div>
+          <h5 class="modal-title" id="certModalTitle">Certificate</h5>
+          <p class="modal-sub" id="certModalSub"></p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="certModalImg" src="" alt="Certificate" class="cert-modal-img">
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ===== CTA ===== -->
 <section class="cta-section">
@@ -411,7 +769,7 @@
           <p class="mb-0">Have a project in mind or want to discuss an opportunity?</p>
         </div>
       </div>
-      <a href="#contact" class="btn btn-light-purple">Get In Touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
+      <a href="tel:+918826668722" class="btn btn-light-purple">Get In Touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
     </div>
   </div>
 </section>
@@ -422,26 +780,26 @@
     <div class="row g-4">
       <div class="col-lg-4">
         <a class="navbar-brand" href="#home">
-          <span class="logo-badge">RN</span>
+          <span class="logo-badge"><img src="./assets/profile/rn-logo.png" alt="Raj Narayan"></span>
           <span class="logo-text">Raj Narayan</span>
         </a>
         <p class="footer-desc">QA Engineer | Automation Tester<br>Email Automation Specialist</p>
         <div class="hero-socials mt-3">
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="https://www.linkedin.com/in/raj-narayan-50a0bb135/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/rajen1071/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:rajnarayanen1071@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+918826668722"><i class="fa-solid fa-phone"></i></a>
         </div>
       </div>
       <div class="col-6 col-lg-2">
         <h6>Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#automation">Automation</a></li>
-          <li><a href="#dashboards">Dashboards</a></li>
+          <li><a href="#email-analytics">Email Analytics</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -455,11 +813,11 @@
       <div class="col-lg-3">
         <h6>Contact</h6>
         <ul class="footer-links">
-          <li><i class="fa-solid fa-envelope me-2"></i>rajnarayanen1071@gmail.com</li>
-          <li><i class="fa-solid fa-phone me-2"></i>+91 8826668722</li>
+          <li><i class="fa-solid fa-envelope me-2"></i><a href="mailto:rajnarayanen1071@gmail.com">rajnarayanen1071@gmail.com</a></li>
+          <li><i class="fa-solid fa-phone me-2"></i><a href="tel:+918826668722">+91 8826668722</a></li>
           <li><i class="fa-solid fa-location-dot me-2"></i>Noida, India</li>
         </ul>
-        <a href="#" class="btn btn-purple mt-2">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
+        <a href="./assets/resume/Raj-QA.pdf" download class="btn btn-purple mt-2">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
       </div>
     </div>
     <hr>
