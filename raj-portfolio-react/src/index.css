@@ -864,3 +864,65 @@ h1,h2,h3,h4,h5,h6{ font-weight:600; margin:0; }
   background:rgba(255,255,255,.4); opacity:1; padding:0;
 }
 .laptop-mock .carousel-indicators button.active{ background:var(--purple); }
+
+/* ===== Terminal code syntax highlighting ===== */
+.tok-string{ color:var(--green); }
+.tok-keyword{ color:var(--pink); font-weight:600; }
+.tok-type{ color:#4fd6e8; }
+.tok-plain{ color:#cfc9ff; }
+
+/* ===== Skills Ticker (infinite marquee) ===== */
+.ticker-wrap{
+  overflow:hidden;
+  border-top:1px solid var(--card-border);
+  border-bottom:1px solid var(--card-border);
+  background:rgba(255,255,255,.02);
+  padding:1.1rem 0;
+}
+.ticker-track{
+  display:flex; width:max-content;
+  animation: tickerScroll 22s linear infinite;
+}
+.ticker-wrap:hover .ticker-track{ animation-play-state: paused; }
+.ticker-item{
+  display:flex; align-items:center; gap:1.6rem;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.85rem; font-weight:500;
+  letter-spacing:.06em; text-transform:uppercase;
+  color:var(--text-muted);
+  padding:0 1.6rem;
+  white-space:nowrap;
+}
+.ticker-plus{ color:#2fd3b0; margin-left:1.6rem; font-size:1rem; }
+@keyframes tickerScroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+/* ===== Hover polish — glow + lift on every card/box ===== */
+.skill-card, .project-card, .auto-card, .cert-card, .code-card,
+.exp-tab-btn, .stat-item, .timeline-item, .term-stat, .dashboard-link-btn,
+.about-year-block, .terminal-card{
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+}
+.skill-card:hover, .project-card:hover, .auto-card:hover, .cert-card:hover, .code-card:hover{
+  box-shadow: 0 16px 40px rgba(124,92,255,.22);
+}
+.code-card:hover{ transform:translateY(-5px); border-color:var(--purple); }
+.stat-item:hover{ transform:translateY(-4px); }
+.stat-item:hover .stat-icon{ transform:scale(1.12); }
+.stat-icon{ transition: transform .25s ease; }
+.timeline-item:hover .timeline-icon{ transform:translateY(-4px) scale(1.08); box-shadow:0 10px 24px rgba(124,92,255,.3); }
+.timeline-icon{ transition: transform .25s ease, box-shadow .25s ease; }
+.term-stat:hover{ background: rgba(124,92,255,.06); }
+.about-year-block:hover .about-year-dot{ background:var(--purple); box-shadow:0 0 0 5px rgba(124,92,255,.2); }
+.about-year-dot{ transition: box-shadow .25s ease, background .25s ease; }
+.exp-tab-btn:hover{ box-shadow:0 8px 22px rgba(124,92,255,.18); }
+.terminal-card:hover{ box-shadow:0 25px 65px rgba(124,92,255,.28); }
+
+/* ===== Scroll reveal ===== */
+.reveal{
+  opacity:0; transform:translateY(28px);
+  transition: opacity .65s cubic-bezier(.22,.68,0,1), transform .65s cubic-bezier(.22,.68,0,1);
+}
+.reveal-visible{ opacity:1; transform:none; }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { terminalScript } from '../data/content'
+import { tokenizeCode } from '../utils/tokenizeCode'
 
 export default function TerminalWidget() {
   const [lines, setLines] = useState([])
@@ -91,7 +92,13 @@ export default function TerminalWidget() {
       </div>
       <div className="terminal-body" ref={bodyRef}>
         {lines.map((l, i) => (
-          <span className={'t-line t-' + l.type} key={i}>{l.text}</span>
+          <span className={'t-line t-' + l.type} key={i}>
+            {l.type === 'code'
+              ? tokenizeCode(l.text).map((tok, ti) => (
+                  <span className={tok.cls} key={ti}>{tok.text}</span>
+                ))
+              : l.text}
+          </span>
         ))}
         {currentLine && (
           <span className={'t-line t-' + currentLine.type}>

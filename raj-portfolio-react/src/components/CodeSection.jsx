@@ -1,4 +1,5 @@
 import { codeCards } from '../data/content'
+import Reveal from './Reveal'
 
 export default function CodeSection() {
   return (
@@ -6,14 +7,16 @@ export default function CodeSection() {
       <div className="container">
         <p className="section-label">Code &amp; Problem Solving</p>
         <div className="row g-4">
-          {codeCards.map((c) => (
+          {codeCards.map((c, i) => (
             <div className="col-md-4" key={c.title}>
-              <div className="code-card">
-                <div className="code-icon"><img src={'/' + c.icon} alt={c.title} /></div>
-                <h5>{c.title}</h5>
-                <p>{c.desc}</p>
-                <a href="#" className={c.link}>{c.cta} <i className="fa-solid fa-arrow-right ms-1"></i></a>
-              </div>
+              <Reveal delay={i * 80}>
+                <div className="code-card">
+                  <div className="code-icon"><img src={'/' + c.icon} alt={c.title} /></div>
+                  <h5>{c.title}</h5>
+                  <p>{c.desc}</p>
+                  <a href="#" className={c.link}>{c.cta} <i className="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+              </Reveal>
             </div>
           ))}
         </div>

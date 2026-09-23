@@ -203,6 +203,8 @@ export const certifications = [
 
 export const terminalScript = [
   { text: '// Flipkart Login Automation - Selenium', type: 'comment' },
+  { text: 'WebDriver driver = new ChromeDriver();', type: 'code' },
+  { text: 'driver.manage().window().maximize();', type: 'code' },
   { text: 'driver.get("https://flipkart.com/login");', type: 'code' },
   { text: 'driver.findElement(By.id("mobile")).sendKeys("9876543210");', type: 'code' },
   { text: 'driver.findElement(By.id("pass")).sendKeys("******");', type: 'code' },
@@ -214,4 +216,9 @@ export const terminalScript = [
   { text: '[PASS] Credentials submitted', type: 'pass' },
   { text: '[FAIL] OTP timeout edge case', type: 'fail' },
   { text: '[PASS] Dashboard redirect verified', type: 'pass' },
+]
+
+export const tickerTags = [
+  'Test Planning', 'Functional Testing', 'API Testing',
+  'SQL & Database Testing', 'Automation Testing', 'Agile QA',
 ]
