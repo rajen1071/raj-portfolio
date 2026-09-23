@@ -31,8 +31,7 @@ export default function Navbar() {
     <nav className={'navbar navbar-expand-lg fixed-top custom-navbar' + (scrolled ? ' scrolled' : '')}>
       <div className="container-fluid px-0">
         <a className="navbar-brand" href="#home" onClick={(e) => { e.preventDefault(); go('home') }}>
-          <span className="logo-badge"><img src="/assets/profile/rn-logo.png" alt="Raj Narayan" /></span>
-          <span className="logo-text">Raj Narayan</span>
+          <img className="brand-logo" src="/assets/profile/rn-logo.png" alt="Raj Narayan - QA Analyst & Automation Tester" />
         </a>
         <button className="navbar-toggler" type="button" onClick={() => setOpen(!open)}>
           <span className="navbar-toggler-icon"></span>

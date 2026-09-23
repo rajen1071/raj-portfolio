@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { dashboardImages, dashboardLinks } from '../data/content'
 import Modal from './Modal'
+import Reveal from './Reveal'
 
 export default function EmailAnalytics() {
   const [idx, setIdx] = useState(0)
@@ -20,43 +21,47 @@ export default function EmailAnalytics() {
         <p className="section-label">Email Analytics Dashboard</p>
         <div className="row align-items-center g-5">
           <div className="col-lg-7">
-            <div className="laptop-mock">
-              <div className="carousel">
-                <div className="carousel-inner">
-                  <img src={'/' + dashboardImages[idx].src} alt={dashboardImages[idx].alt} />
-                </div>
-                <button className="carousel-control-prev" type="button" onClick={prev}>
-                  <span className="carousel-control-prev-icon"></span>
-                </button>
-                <button className="carousel-control-next" type="button" onClick={next}>
-                  <span className="carousel-control-next-icon"></span>
-                </button>
-                <div className="carousel-indicators">
-                  {dashboardImages.map((_, i) => (
-                    <button
-                      key={i}
-                      className={i === idx ? 'active' : ''}
-                      onClick={() => setIdx(i)}
-                      aria-label={'Slide ' + (i + 1)}
-                    ></button>
-                  ))}
+            <Reveal>
+              <div className="laptop-mock">
+                <div className="carousel">
+                  <div className="carousel-inner">
+                    <img src={'/' + dashboardImages[idx].src} alt={dashboardImages[idx].alt} />
+                  </div>
+                  <button className="carousel-control-prev" type="button" onClick={prev}>
+                    <span className="carousel-control-prev-icon"></span>
+                  </button>
+                  <button className="carousel-control-next" type="button" onClick={next}>
+                    <span className="carousel-control-next-icon"></span>
+                  </button>
+                  <div className="carousel-indicators">
+                    {dashboardImages.map((_, i) => (
+                      <button
+                        key={i}
+                        className={i === idx ? 'active' : ''}
+                        onClick={() => setIdx(i)}
+                        aria-label={'Slide ' + (i + 1)}
+                      ></button>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
           <div className="col-lg-5">
-            <h4>Email Analytics Dashboard</h4>
-            <p className="about-text">Real-time insights into email performance, campaign analytics, contact engagement and deliverability, built for the Restaurant Association Mautic instance - sign-ups, newsletters, registration forms and full campaign overview in one place.</p>
-            <ul className="check-list">
-              <li><i className="fa-solid fa-check"></i> Open Rate, Click Rate, Bounce Rate</li>
-              <li><i className="fa-solid fa-check"></i> Campaign Performance Report</li>
-              <li><i className="fa-solid fa-check"></i> Contact Engagement Analysis</li>
-              <li><i className="fa-solid fa-check"></i> Newsletter &amp; Registration Form Tracking</li>
-              <li><i className="fa-solid fa-check"></i> Filter by Date, Campaign, Segment</li>
-            </ul>
-            <button className="btn btn-purple" onClick={() => setOpen(true)}>
-              Live Demo <i className="fa-solid fa-up-right-from-square ms-2"></i>
-            </button>
+            <Reveal delay={100}>
+              <h4>Email Analytics Dashboard</h4>
+              <p className="about-text">Real-time insights into email performance, campaign analytics, contact engagement and deliverability, built for the Restaurant Association Mautic instance - sign-ups, newsletters, registration forms and full campaign overview in one place.</p>
+              <ul className="check-list">
+                <li><i className="fa-solid fa-check"></i> Open Rate, Click Rate, Bounce Rate</li>
+                <li><i className="fa-solid fa-check"></i> Campaign Performance Report</li>
+                <li><i className="fa-solid fa-check"></i> Contact Engagement Analysis</li>
+                <li><i className="fa-solid fa-check"></i> Newsletter &amp; Registration Form Tracking</li>
+                <li><i className="fa-solid fa-check"></i> Filter by Date, Campaign, Segment</li>
+              </ul>
+              <button className="btn btn-purple" onClick={() => setOpen(true)}>
+                Live Demo <i className="fa-solid fa-up-right-from-square ms-2"></i>
+              </button>
+            </Reveal>
           </div>
         </div>
       </div>

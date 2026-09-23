@@ -8,7 +8,7 @@ export default function Automation() {
         <p className="section-label mb-3">Automation Projects</p>
         <div className="row g-4">
           {automationProjects.map((a, i) => (
-            <div className="col-md-6 col-lg-4 col-xl" key={a.title}>
+            <div className="col-md-6 col-lg-4" key={a.title}>
               <Reveal delay={i * 60}>
                 <div className="auto-card">
                   <h6><i className={a.icon + ' ' + a.color}></i> {a.title}</h6>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { profile, timeline, aboutTimeline } from '../data/content'
 import Modal from './Modal'
+import Reveal from './Reveal'
 
 export default function About() {
   const [open, setOpen] = useState(false)
@@ -11,21 +12,25 @@ export default function About() {
         <p className="section-label">About Me</p>
         <div className="row">
           <div className="col-lg-5">
-            <p className="about-text">I am a QA Engineer with 4.2+ years of strong expertise in Manual Testing, Test Automation, Mautic Email Automation, SQL, API Testing and Dashboard Development.</p>
-            <p className="about-text">I enjoy solving problems, improving processes and building automation workflows that create real business impact.</p>
-            <button className="btn btn-purple" onClick={() => setOpen(true)}>
-              More About Me <i className="fa-solid fa-arrow-right ms-2"></i>
-            </button>
+            <Reveal>
+              <p className="about-text">I am a QA Engineer with 4.2+ years of strong expertise in Manual Testing, Test Automation, Mautic Email Automation, SQL, API Testing and Dashboard Development.</p>
+              <p className="about-text">I enjoy solving problems, improving processes and building automation workflows that create real business impact.</p>
+              <button className="btn btn-purple" onClick={() => setOpen(true)}>
+                More About Me <i className="fa-solid fa-arrow-right ms-2"></i>
+              </button>
+            </Reveal>
           </div>
           <div className="col-lg-7">
-            <div className="timeline-wrap">
-              {timeline.map((t) => (
-                <div className="timeline-item" key={t.year}>
-                  <div className={'timeline-icon ' + t.tl}><i className={t.icon}></i></div>
-                  <h4>{t.year}</h4><p>{t.label}</p>
-                </div>
-              ))}
-            </div>
+            <Reveal delay={100}>
+              <div className="timeline-wrap">
+                {timeline.map((t) => (
+                  <div className="timeline-item" key={t.year}>
+                    <div className={'timeline-icon ' + t.tl}><i className={t.icon}></i></div>
+                    <h4>{t.year}</h4><p>{t.label}</p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
           </div>
         </div>
       </div>

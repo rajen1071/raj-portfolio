@@ -222,3 +222,32 @@ export const tickerTags = [
   'Test Planning', 'Functional Testing', 'API Testing',
   'SQL & Database Testing', 'Automation Testing', 'Agile QA',
 ]
+
+// The full technology/testing-topic set for the interactive orbit in the
+// Skills section. Starts from the existing tickerTags (nothing removed),
+// plus every topic explicitly requested for the redesign, with exact-string
+// duplicates left out (e.g. "Functional Testing" already appears above).
+export const orbitTech = [
+  ...tickerTags,
+  'Smoke Testing',
+  'Sanity Testing',
+  'Regression Testing',
+  'Retesting',
+  'Integration Testing',
+  'Test Case Creation',
+  'Test Case Execution',
+  'Test Plan',
+  'Test Scenario',
+  'Agile Methodology',
+  'Selenium',
+  'WebDriver',
+  'Java',
+  'Maven',
+  'TestNG',
+  'POM',
+  'CI/CD',
+  'BDD',
+  'Cucumber',
+  'Postman',
+  'SQL',
+]

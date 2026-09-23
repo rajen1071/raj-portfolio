@@ -7,8 +7,7 @@ export default function Footer() {
         <div className="row g-4">
           <div className="col-lg-4">
             <a className="navbar-brand" href="#home">
-              <span className="logo-badge"><img src="/assets/profile/rn-logo.png" alt={profile.name} /></span>
-              <span className="logo-text">{profile.name}</span>
+              <img className="brand-logo" src="/assets/profile/rn-logo.png" alt={profile.name + ' - QA Analyst & Automation Tester'} />
             </a>
             <p className="footer-desc">QA Engineer | Automation Tester<br />Email Automation Specialist</p>
             <div className="hero-socials mt-3">

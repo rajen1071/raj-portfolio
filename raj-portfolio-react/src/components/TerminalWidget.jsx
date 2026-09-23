@@ -28,6 +28,15 @@ export default function TerminalWidget() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Keep the newest line in view inside the fixed-height editor: the box
+  // itself never resizes (see .terminal-body in index.css), so as content
+  // overflows it, we scroll the box's content upward instead.
+  useEffect(() => {
+    const el = bodyRef.current
+    if (!el) return
+    el.scrollTop = el.scrollHeight
+  }, [lines, typing])
+
   function runScript(lineIdx = 0) {
     if (lineIdx >= terminalScript.length) {
       setTimeout(() => finishAndAnimateStats(), 300)
